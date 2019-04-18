@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import TabBarCom from '../../common/tabBar' 
-export default class Indent extends Component {
+
+export default class ShopcarOutCountry extends Component {
   render() {
     return (
       <div>
-      
+        
       </div>
     )
   }

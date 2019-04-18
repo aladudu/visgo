@@ -14,16 +14,18 @@ class TabBarCom extends Component {
         this.state = {
             selectedTab: 'home',
             fullScreen: true,
+            hidden: false
         };
     }
 
     render() {
         return (
-            <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+            <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 400 }}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#FC3B72"
                     barTintColor="white"
+                    hidden={this.state.hidden}
 
                 >
                     <TabBar.Item
@@ -112,6 +114,7 @@ class TabBarCom extends Component {
                         onPress={() => {
                             this.setState({
                                 selectedTab: 'shopcar',
+                                hidden: !this.state.hidden
                             });
                             this.props.history.push("/shopcar");
                             document.title = "购物车";
