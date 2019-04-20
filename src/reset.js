@@ -13,6 +13,12 @@ ul, ol ,li{ list-style:none; }
 
 body { color:#333;  background:#fff;}
 
+i,em{font-style:normal;}
+
+b,strong{font-weight:normal;}
+
+
+
 a { color:#666; text-decoration:none; }
 
 .clear{clear:both}

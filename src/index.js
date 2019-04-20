@@ -1,14 +1,14 @@
-import React ,{Fragment}from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {GlobalStyle} from "./reset";
 import App from './App';
-
-
+import { Provider} from 'react-redux'
+import store from './store'
 ReactDOM.render(
-    <Fragment>
+    <Provider store={store}>
         <App />
         <GlobalStyle/>
-    </Fragment>
+    </Provider>
     
 , document.getElementById('root'));
 
