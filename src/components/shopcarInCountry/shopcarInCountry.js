@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import LoginWrap from '@common/loginWrap/loginWrap'
 import {GoodsList,Container} from './styleComponents'
 import {connect} from 'react-redux';
@@ -66,3 +67,16 @@ import BScroll from 'better-scroll';
 export default connect(mapStateToProps,mapDispatchToProps)(ShopcarInCountry)
 
 
+=======
+
+
+export default class ShopcarInCountry extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
+>>>>>>> 93ce43e452cf4401a6ba158d6c257b38a47ee2d3
